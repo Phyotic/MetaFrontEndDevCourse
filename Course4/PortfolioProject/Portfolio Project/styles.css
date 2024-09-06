@@ -1,0 +1,148 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: rgb(236, 232, 232);
+    --secondary: rgb(0, 0, 0);
+    --body-color: rgb(246, 246, 246);
+}
+
+body {
+    background-color: var(--body-color);
+    padding: 1em 3em;
+}
+
+/* Header */
+.header-image-container {
+    width: 100%;
+    height: 30vh;
+    overflow: hidden;
+    background-image: url("./assets/Asset\ 1@3x.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    margin-bottom: 2rem;
+}
+
+/* Nav bar*/
+nav {
+    margin-bottom: 1em;
+}
+
+ul {
+    display: flex;
+    padding: 0 2em;
+}
+
+li {
+    flex: 1 1 25%;
+    list-style-type: none;
+    font-size: calc(1.6rem + 1vw);
+    text-align: center;
+    margin: 0 0.1em;
+}
+
+li.selected {
+    color: var(--primary);
+    background-color: var(--secondary);
+}
+
+li:hover {
+    transition: color 1s;
+    cursor: pointer;
+    color: var(--primary);
+    background-color: var(--secondary);
+}
+
+/* Promotion */
+main > section {
+    margin-bottom: 1em;
+}
+
+.promotion-background-image {
+    background-image: url("./assets/rings-3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 70%;
+    padding: 1em;
+    border-radius: 1em;
+}
+
+.promotion-background-image h1 {
+    color: var(--primary);
+    font-size: 2rem;
+    padding-bottom: 1em;
+}
+
+.promotion-background-image p {
+    color: var(--primary);
+    font-size: 1.5rem;
+}
+
+/* Columns */
+.columns-container {
+    display: flex;
+}
+
+.column {
+    background-color: var(--primary);
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 33%;
+    padding: 2rem 1rem;
+    margin: 0 1em 0 0;
+    border-radius: 0.5em;
+}
+
+.column:last-of-type {
+    margin: 0;
+}
+
+.column:hover {
+    transition: color 1s;
+    background-color: var(--secondary);
+    color: var(--primary);
+    cursor: pointer;
+}
+
+.article-headline {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.article-image-container {
+    min-height: 300px;
+    height: 40vh;
+    margin-bottom: 1rem;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 1em;
+}
+
+.article-text {
+    font-size: 1.2rem;
+    word-spacing: 0.3rem;
+}
+
+/* Footer */
+footer {
+    display: flex;
+}
+
+.footer-image {
+    flex: 1 1 50%;
+    background-image: url("./assets/Asset\ 2@3x.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.footer-text {
+    flex: 1 1 50%;
+    text-align: right;
+    font-size: 1rem;
+}
