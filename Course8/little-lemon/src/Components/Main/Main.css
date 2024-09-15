@@ -1,0 +1,289 @@
+/* Reserve Section*/
+#reserve-section section {
+    background-image: url("../../images/Mario\ and\ Adrian\ A.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    color: white;
+    text-align: center;
+}
+
+#reserve-section div img {
+    width: 100%;
+    display: none;
+}
+
+#reserve-section section h1 {
+    font-size: 2rem;
+}
+
+#reserve-section section p {
+    padding: 10px;
+}
+
+#reserve-section section button {
+    padding: 10px;
+}
+
+/* Specials section*/
+#specials-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#specials-header button {
+    width: 100%;
+    padding: 2px;
+    margin: 5px 0;
+}
+
+.dish-info {
+    padding: 0 4%;
+}
+
+.dish-name-price {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dish-name-price p {
+    font-weight: 700;
+}
+
+.highlight-orange {
+    color: orange;
+}
+
+.dish-info > p {
+    color: gray;
+    padding: 10px 0;
+}
+
+.dish-info button {
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+}
+
+.delivery-bike {
+    height: 1.2rem;
+    padding-left: 5px;
+}
+
+.card-deliver {
+    display: flex;
+    align-items: center;
+}
+
+.dish-card {
+    padding-bottom: 5px;
+    border-radius: 10px 10px 0 0;
+    background-color: rgb(228, 227, 227);
+}
+
+/* Testimonials Section */
+#testimonials-section {
+    padding: 40px 0;
+}
+
+#testimonials-section > h1 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.ratings-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.rating-card > h1 {
+    font-size: 1rem;
+    text-align: center;
+}
+
+.rating-profile-image {
+    width: 100%;
+}
+
+.rating-profile-and-name > p {
+    font-weight: 700;
+}
+
+.rating-card p {
+    font-size: 1rem;
+}
+
+/* About Us Section */
+#restaurant-info > h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+#restaurant-info > h2 {
+    text-align: center;
+}
+
+#about-us-images-container {
+    padding: 2vh 0;
+}
+
+.about-us-image {
+    width: 100%;
+}
+
+@media screen and (width >= 700px) {
+    /* Reserve section*/
+    #reserve-section {
+        display: flex;
+    }
+
+    #reserve-section section {
+        background-image: none;
+        color: black;
+        text-align: left;
+        width: 40%;
+
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 40%;
+        padding-top: 20px;
+    }
+
+    #reserve-section section p {
+        padding: 10px 0;
+    }
+
+    #reserve-section section button {
+        width: clamp(200px, 50%, 500px);
+    }
+
+    #reserve-section .img-container {
+        display: flex;
+        padding: 10px 20px 20px;
+        flex: 1 1 20%;
+    }
+
+    #reserve-section .img-container img {
+        display: block;
+    }
+
+    /*Specials section*/
+    #specials-header {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 30px 20px;
+    }
+
+    #specials-header h1 {
+        font-size: 2rem;
+    }
+
+    #specials-header button {
+        width: 15vw;
+        padding: 10px;
+    }
+
+    .dish-cards-container {
+        display: flex;
+    }
+
+    .dish-card {
+        margin: 0 2vw;
+        flex: 1 1 30%;
+    }
+
+    .dish-card > img {
+        height: 20vh;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    /* Testimonials Section */
+    #testimonials-section {
+        padding: 10vh 0;
+    }
+
+    #testimonials-section > h1 {
+        padding: 5vh 0;
+    }
+
+    .ratings-container {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .rating-card {
+        display: flex;
+        flex-direction: column;
+        flex: 0 1 20%;
+    }
+
+    .rating-card > h1 {
+        text-align: left;
+    }
+
+    .rating-profile-and-name {
+        display: flex;
+        padding: 2vh 0;
+    }
+
+    .rating-profile-image-container {
+        display: flex;
+        flex: 1 1 50%;
+    }
+
+    .rating-profile-and-name > p {
+        flex: 1 1 50%;
+        align-self: center;
+        padding-left: 1vw;
+    }
+
+    /* About Us Section*/
+    #about-us-section {
+        display: flex;
+        padding: 10vh 0;
+    }
+
+    #restaurant-info {
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 50%;
+        height: 50vh;
+    }
+
+    #restaurant-info > h1,
+    #restaurant-info > h2 {
+        text-align: left;
+    }
+
+    #restaurant-info > h2 {
+        padding-bottom: 3vh;
+    }
+
+    #about-us-images-container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 50%;
+        padding: 0;
+    }
+
+    .about-us-image-containers {
+        position: absolute;
+        width: 50%;
+        left: 50%;
+    }
+
+    .about-us-image-containers:nth-child(odd) {
+        left: 25%;
+        top: 30%;
+    }
+
+    .about-us-image {
+        max-width: clamp(250px, 10%, 13vw);
+    }
+}

@@ -1,0 +1,20 @@
+nav {
+    align-content: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav li {
+    font-size: 1em;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
