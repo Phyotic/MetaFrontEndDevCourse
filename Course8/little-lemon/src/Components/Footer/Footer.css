@@ -1,0 +1,39 @@
+footer {
+    padding: 5vh 0;
+}
+
+#footer-logo img {
+    width: 100%;
+}
+
+footer h2 {
+    text-align: center;
+    padding-top: 2vh;
+}
+
+footer ul li {
+    padding: 1vh;
+    text-align: center;
+    list-style-type: none;
+}
+
+@media screen and (width >= 700px) {
+    footer {
+        display: flex;
+    }
+
+    #footer-logo {
+        display: flex;
+        flex: 1 1 20%;
+    }
+
+    .header-and-list {
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 25%;
+    }
+
+    footer h2 {
+        min-height: 11vh;
+    }
+}

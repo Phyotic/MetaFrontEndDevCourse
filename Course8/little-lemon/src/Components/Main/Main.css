@@ -1,27 +1,48 @@
 /* Reserve Section*/
-#reserve-section section {
+#reserve-section {
+    padding: 10vh 0;
+}
+
+#reserve-image-background {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#reserve-image-background {
     background-image: url("../../images/Mario\ and\ Adrian\ A.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: 50% 50%;
 
     color: white;
     text-align: center;
+
+    min-height: 50vh;
+
+    display: flex;
+    flex-direction: column;
 }
 
-#reserve-section div img {
+#reserve-section .img-container img {
     width: 100%;
     display: none;
 }
 
-#reserve-section section h1 {
+#reserve-section .top-half h1 {
     font-size: 2rem;
+    padding: 3vh 0 0;
 }
 
-#reserve-section section p {
-    padding: 10px;
+#reserve-section .bottom-half p {
+    padding-bottom: 2vh;
 }
 
-#reserve-section section button {
+#reserve-section .bottom-half {
+    padding: 0 2vw 2vh;
+}
+
+#reserve-section .bottom-half button {
     padding: 10px;
 }
 
@@ -140,20 +161,37 @@
         display: flex;
     }
 
-    #reserve-section section {
+    #reserve-image-background {
         background-image: none;
         color: black;
         text-align: left;
-        width: 40%;
 
         display: flex;
         flex-direction: column;
         flex: 1 1 40%;
         padding-top: 20px;
+        justify-content: center;
     }
 
-    #reserve-section section p {
-        padding: 10px 0;
+    #reserve-image-background .top-half {
+        padding: 0;
+    }
+
+    #reserve-section .top-half h1 {
+        font-size: 2rem;
+        padding: 0;
+    }
+
+    #reserve-image-background .bottom-half {
+        padding: 0;
+    }
+
+    .top-half h2 {
+        padding: 1vh 0;
+    }
+
+    #reserve-image-background .bottom-half p {
+        padding: 3vh 0 5vh;
     }
 
     #reserve-section section button {
@@ -162,12 +200,14 @@
 
     #reserve-section .img-container {
         display: flex;
-        padding: 10px 20px 20px;
-        flex: 1 1 20%;
+        flex: 1 1 40%;
     }
 
     #reserve-section .img-container img {
         display: block;
+        object-fit: cover;
+        object-position: 70% 0;
+        padding: 10vh 0;
     }
 
     /*Specials section*/
@@ -219,7 +259,7 @@
     .rating-card {
         display: flex;
         flex-direction: column;
-        flex: 0 1 20%;
+        flex: 1 1 25%;
     }
 
     .rating-card > h1 {

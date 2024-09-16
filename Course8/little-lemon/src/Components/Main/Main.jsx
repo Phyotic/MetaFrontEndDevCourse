@@ -12,16 +12,23 @@ function Main() {
     return (
         <main>
             <section id="reserve-section">
-                <section>
-                    <h1>Little Lemon</h1>
-                    <h2>Chicago</h2>
-                    <p>
-                        sadflkajs dfasdfkasd jaskdfj alsj askdjfa sdfkjas dfkasdjf
-                        asdkfjasldfjsdkfj askdjfkasdj ajsdfkasdf ssdjf asd fas dfasjdf
-                        asdjfkas aj df asdfj asdf fadfk
-                    </p>
-                    <button>Reserve a Table</button>
+                <section id="reserve-image-background">
+                    <section className="top-half">
+                        <h1>Little Lemon</h1>
+                        <h2>Chicago</h2>
+                    </section>
+
+                    <section className="bottom-half">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Adipisci veniam atque facilis ducimus asperiores sed dolorum,
+                            deleniti iure, nulla quo, consectetur illo ullam aliquid
+                            perferendis totam quaerat alias eum libero!
+                        </p>
+                        <button>Reserve a Table</button>
+                    </section>
                 </section>
+
                 <div className="img-container">
                     <img src={section1Image} alt="placeholder text"></img>
                 </div>
