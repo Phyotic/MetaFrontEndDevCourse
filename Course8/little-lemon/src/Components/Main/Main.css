@@ -53,9 +53,13 @@
     align-items: center;
 }
 
+#specials-header h1 {
+    font-size: 2rem;
+}
+
 #specials-header button {
     width: 100%;
-    padding: 2px;
+    padding: 1em;
     margin: 5px 0;
 }
 
