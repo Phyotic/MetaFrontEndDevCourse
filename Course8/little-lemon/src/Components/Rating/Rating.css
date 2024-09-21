@@ -1,0 +1,16 @@
+.rating-card > h1 {
+    font-size: 1rem;
+    text-align: center;
+}
+
+.rating-profile-image {
+    width: 100%;
+}
+
+.rating-profile-and-name > p {
+    font-weight: 700;
+}
+
+.rating-card p {
+    font-size: 1rem;
+}
