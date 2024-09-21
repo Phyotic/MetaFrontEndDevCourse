@@ -1,7 +1,23 @@
 import "./Footer.css";
 import logo from "../../images/Logo .svg";
+import { Link } from "react-router-dom";
 
 function Footer() {
+    let headerLinks = [
+        ["/", "Home"],
+        ["/about", "About"],
+        ["/menu", "Menu"],
+        ["/booking", "Reservations"],
+        ["/order-online", "Order Online"],
+        ["/login", "Login"],
+    ];
+
+    let socialMediaLinks = [
+        ["/", "link 1"],
+        ["/", "link 2"],
+        ["/", "link 3"],
+    ];
+
     return (
         <footer>
             <section id="footer-logo">
@@ -11,24 +27,13 @@ function Footer() {
             <section className="header-and-list">
                 <h2>Doormat Navigation</h2>
                 <ul>
-                    <li>
-                        <a href="/home">Home</a>
-                    </li>
-                    <li>
-                        <a href="/about">About</a>
-                    </li>
-                    <li>
-                        <a href="/menu">Menu</a>
-                    </li>
-                    <li>
-                        <a href="/reservations">Reservations</a>
-                    </li>
-                    <li>
-                        <a href="/order-online">Order Online</a>
-                    </li>
-                    <li>
-                        <a href="/login">Login</a>
-                    </li>
+                    {headerLinks.map((arr) => {
+                        return (
+                            <li>
+                                <Link to={arr[0]}>{arr[1]}</Link>
+                            </li>
+                        );
+                    })}
                 </ul>
             </section>
 
@@ -44,15 +49,13 @@ function Footer() {
             <section className="header-and-list">
                 <h2>Social Media Links</h2>
                 <ul>
-                    <li>
-                        <a href="/home">link 1</a>
-                    </li>
-                    <li>
-                        <a href="/home">link 2</a>
-                    </li>
-                    <li>
-                        <a href="/home">link 3</a>
-                    </li>
+                    {socialMediaLinks.map((arr) => {
+                        return (
+                            <li>
+                                <Link to={arr[0]}>{arr[1]}</Link>
+                            </li>
+                        );
+                    })}
                 </ul>
             </section>
         </footer>

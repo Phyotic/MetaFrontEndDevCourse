@@ -1,0 +1,45 @@
+.dish-info {
+    padding: 0 4%;
+}
+
+.dish-name-price {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dish-name-price p {
+    font-weight: 700;
+}
+
+.highlight-orange {
+    color: orange;
+}
+
+.dish-info > p {
+    color: gray;
+    padding: 10px 0;
+}
+
+.dish-info button {
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+}
+
+.delivery-bike {
+    height: 1.2rem;
+    padding-left: 5px;
+}
+
+.card-deliver {
+    display: flex;
+    align-items: center;
+}
+
+.dish-card {
+    padding-bottom: 5px;
+    border-radius: 10px 10px 0 0;
+    background-color: rgb(228, 227, 227);
+}
