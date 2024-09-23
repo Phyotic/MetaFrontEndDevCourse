@@ -60,7 +60,7 @@ function BookingForm({ availableTimes, dispatchAvailableTimes }) {
                 <option>Anniversary</option>
             </select>
 
-            <input type="submit" value="Make Your reservation"></input>
+            <input type="submit" value="Make Your Reservation"></input>
         </form>
     );
 }
