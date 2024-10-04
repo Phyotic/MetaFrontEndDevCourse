@@ -102,6 +102,7 @@ function HomePage() {
                     {specialsInfo.map((dish) => {
                         return (
                             <DishCard
+                                key={dish.name}
                                 name={dish.name}
                                 price={dish.price}
                                 info={dish.info}
@@ -119,6 +120,7 @@ function HomePage() {
                     {ratingsInfo.map((review) => {
                         return (
                             <Rating
+                                key={review.name}
                                 rating={review.rating}
                                 userPortrait={review.userPortrait}
                                 altText={review.altText}
