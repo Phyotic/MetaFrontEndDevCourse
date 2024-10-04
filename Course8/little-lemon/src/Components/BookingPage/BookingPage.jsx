@@ -1,7 +1,7 @@
 import BookingForm from "../BookingForm/BookingForm";
 import "./BookingPage.css";
 
-function BookingPage({ availableTimes, dispatchAvailableTimes }) {
+function BookingPage({ availableTimes, dispatchAvailableTimes, submitForm }) {
     return (
         <>
             <h1>Booking page</h1>
@@ -9,6 +9,7 @@ function BookingPage({ availableTimes, dispatchAvailableTimes }) {
             <BookingForm
                 availableTimes={availableTimes}
                 dispatchAvailableTimes={dispatchAvailableTimes}
+                submitForm={submitForm}
             ></BookingForm>
         </>
     );

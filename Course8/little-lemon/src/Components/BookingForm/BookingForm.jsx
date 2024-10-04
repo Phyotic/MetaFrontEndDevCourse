@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./BookingForm";
 
-function BookingForm({ availableTimes, dispatchAvailableTimes }) {
+function BookingForm({ availableTimes, dispatchAvailableTimes, submitForm }) {
     const date = new Date().toJSON().slice(0, 10);
     let [formData, setFormData] = useState({
         date: date,
@@ -20,12 +20,13 @@ function BookingForm({ availableTimes, dispatchAvailableTimes }) {
         setFormData({ ...formData, [name]: value });
 
         if (name === "date") {
-            dispatchAvailableTimes({ type: "update", data: value });
+            const date = new Date(value);
+            dispatchAvailableTimes({ type: "update", data: date });
         }
     }
 
     return (
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={submitForm}>
             <label htmlFor="res-date">Choose date</label>
             <input
                 type="date"
