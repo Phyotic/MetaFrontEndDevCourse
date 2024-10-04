@@ -29,7 +29,7 @@ function Footer() {
                 <ul>
                     {headerLinks.map((arr) => {
                         return (
-                            <li>
+                            <li key={arr[1]}>
                                 <Link to={arr[0]}>{arr[1]}</Link>
                             </li>
                         );
@@ -51,7 +51,7 @@ function Footer() {
                 <ul>
                     {socialMediaLinks.map((arr) => {
                         return (
-                            <li>
+                            <li key={arr[1]}>
                                 <Link to={arr[0]}>{arr[1]}</Link>
                             </li>
                         );
