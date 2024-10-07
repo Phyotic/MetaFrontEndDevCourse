@@ -15,6 +15,7 @@ function Main() {
     const nav = useNavigate();
 
     function submitForm(formData) {
+        formData.preventDefault();
         if (submitAPI(formData)) {
             nav("/confirmed");
         }

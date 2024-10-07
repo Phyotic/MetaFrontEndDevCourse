@@ -4,7 +4,7 @@ import { initializeTimes, times, updateTimes } from "../../../utils";
 
 test("BookingForm component rendered", () => {
     render(<BookingForm availableTimes={times} dispatchAvailableTimes={""} />);
-    const chooseDate = screen.getByText("Choose date");
+    const chooseDate = screen.getByText("Choose date*");
     expect(chooseDate).toBeInTheDocument();
 });
 
@@ -21,4 +21,31 @@ test("updateTimes returns expected state", () => {
     });
 
     expect(result).toEqual(oct312024);
+});
+
+test("date input has validation attributes; required, min", () => {
+    render(<BookingForm availableTimes={times} dispatchAvailableTimes={""} />);
+    const dateInput = screen.getByLabelText("Choose date*");
+    expect(dateInput).toHaveAttribute("required");
+    expect(dateInput).toHaveAttribute("min");
+});
+
+test("time select input has validation attributes; required", () => {
+    render(<BookingForm availableTimes={times} dispatchAvailableTimes={""} />);
+    const selectInput = screen.getByLabelText("Choose time*");
+    expect(selectInput).toHaveAttribute("required");
+});
+
+test("guest number input has validation attributes; min, max, required", () => {
+    render(<BookingForm availableTimes={times} dispatchAvailableTimes={""} />);
+    const guestInput = screen.getByLabelText("Number of guests*");
+    expect(guestInput).toHaveAttribute("min");
+    expect(guestInput).toHaveAttribute("max");
+    expect(guestInput).toHaveAttribute("required");
+});
+
+test("occasion select input has validation attributes", () => {
+    render(<BookingForm availableTimes={times} dispatchAvailableTimes={""} />);
+    const occasionInput = screen.getByLabelText("Occasion*");
+    expect(occasionInput).toHaveAttribute("required");
 });

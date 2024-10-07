@@ -83,7 +83,7 @@ function HomePage() {
                             deleniti iure, nulla quo, consectetur illo ullam aliquid
                             perferendis totam quaerat alias eum libero!
                         </p>
-                        <button>Reserve a Table</button>
+                        <button aria-label="On Click">Reserve a Table</button>
                     </section>
                 </section>
 
@@ -95,7 +95,7 @@ function HomePage() {
             <section id="specials-section">
                 <section id="specials-header">
                     <h1>Specials</h1>
-                    <button>Online Menu</button>
+                    <button aria-label="On Click">Online Menu</button>
                 </section>
 
                 <section className="dish-cards-container">
