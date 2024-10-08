@@ -1,0 +1,43 @@
+.form-container {
+    display: flex;
+    justify-content: center;
+    padding: 3vh 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.reservation-time-form,
+.reservation-guests-occasion-form {
+    width: 100%;
+}
+
+.reservation-time-form label,
+.reservation-guests-occasion-form label {
+    display: block;
+}
+
+.label-input-pair {
+    padding: 5%;
+    /* width: clamp(100px, 50%, 200px); */
+    font-weight: 700;
+
+    width: 100%;
+    border-top: 2px dashed #4d625b;
+}
+
+.submit-form-button {
+    padding: 1vh 1vh 1vh;
+}
+
+.submit-form-button:hover {
+    cursor: pointer;
+    background-color: rgb(192, 192, 192);
+}
+
+.reservation-guests-occasion-form {
+    padding-bottom: 3vh;
+}

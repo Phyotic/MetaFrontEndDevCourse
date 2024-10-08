@@ -1,4 +1,4 @@
-BookingPage h1 {
-    color: green;
-    border: 2px solid red;
+#booking-page-header {
+    text-align: center;
+    padding: 3vh 0 0;
 }

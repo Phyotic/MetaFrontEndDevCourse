@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./BookingForm";
+import "./BookingForm.css";
 
 function BookingForm({ availableTimes, dispatchAvailableTimes, submitForm }) {
     const today = new Date();
@@ -31,46 +31,74 @@ function BookingForm({ availableTimes, dispatchAvailableTimes, submitForm }) {
     }
 
     return (
-        <form onSubmit={submitForm}>
-            <label htmlFor="res-date">Choose date*</label>
-            <input
-                type="date"
-                id="res-date"
-                name="date"
-                value={formData.date}
-                onChange={handleChange}
-                min={todayMin}
-                required
-            ></input>
+        <section className="form-container">
+            <form onSubmit={submitForm}>
+                <section className="reservation-time-form">
+                    <section className="label-input-pair">
+                        <label htmlFor="res-date">Choose date*</label>
+                        <input
+                            type="date"
+                            id="res-date"
+                            name="date"
+                            value={formData.date}
+                            onChange={handleChange}
+                            min={todayMin}
+                            required
+                        ></input>
+                    </section>
 
-            <label htmlFor="res-time">Choose time*</label>
-            <select id="res-time" name="time" onChange={handleChange} required>
-                {availableTimes.map((avTime) => {
-                    return <option key={avTime}>{avTime}</option>;
-                })}
-            </select>
+                    <section className="label-input-pair">
+                        <label htmlFor="res-time">Choose time*</label>
+                        <select
+                            id="res-time"
+                            name="time"
+                            onChange={handleChange}
+                            required
+                        >
+                            {availableTimes.map((avTime) => {
+                                return <option key={avTime}>{avTime}</option>;
+                            })}
+                        </select>
+                    </section>
+                </section>
 
-            <label htmlFor="guests">Number of guests*</label>
-            <input
-                type="number"
-                name="guests"
-                placeholder="1"
-                min="1"
-                max="10"
-                id="guests"
-                value={formData.guests}
-                onChange={handleChange}
-                required
-            ></input>
+                <section className="reservation-guests-occasion-form">
+                    <section className="label-input-pair">
+                        <label htmlFor="guests">Number of guests*</label>
+                        <input
+                            type="number"
+                            name="guests"
+                            placeholder="1"
+                            min="1"
+                            max="10"
+                            id="guests"
+                            value={formData.guests}
+                            onChange={handleChange}
+                            required
+                        ></input>
+                    </section>
 
-            <label htmlFor="occasion">Occasion*</label>
-            <select id="occasion" name="occasion" onChange={handleChange} required>
-                <option>Birthday</option>
-                <option>Anniversary</option>
-            </select>
+                    <section className="label-input-pair">
+                        <label htmlFor="occasion">Occasion*</label>
+                        <select
+                            id="occasion"
+                            name="occasion"
+                            onChange={handleChange}
+                            required
+                        >
+                            <option>Birthday</option>
+                            <option>Anniversary</option>
+                        </select>
+                    </section>
+                </section>
 
-            <input type="submit" value="Make Your Reservation"></input>
-        </form>
+                <input
+                    className="submit-form-button"
+                    type="submit"
+                    value="Make Your Reservation"
+                ></input>
+            </form>
+        </section>
     );
 }
 
