@@ -4,7 +4,9 @@ import "./BookingPage.css";
 function BookingPage({ availableTimes, dispatchAvailableTimes, submitForm }) {
     return (
         <>
-            <h1 id="booking-page-header">Booking page</h1>
+            <h1 id="booking-page-header" className="markazi-text-medium">
+                Booking Page
+            </h1>
 
             <BookingForm
                 availableTimes={availableTimes}
