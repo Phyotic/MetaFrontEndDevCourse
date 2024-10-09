@@ -15,4 +15,8 @@ Nav {
     header {
         flex-direction: row;
     }
+
+    header img {
+        padding-right: 1vw;
+    }
 }
