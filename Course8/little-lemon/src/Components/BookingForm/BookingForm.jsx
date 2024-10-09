@@ -35,8 +35,11 @@ function BookingForm({ availableTimes, dispatchAvailableTimes, submitForm }) {
             <form onSubmit={submitForm}>
                 <section className="reservation-time-form">
                     <section className="label-input-pair">
-                        <label htmlFor="res-date">Choose date*</label>
+                        <label className="markazi-text-medium" htmlFor="res-date">
+                            Choose date*
+                        </label>
                         <input
+                            className="karla-regular"
                             type="date"
                             id="res-date"
                             name="date"
@@ -48,8 +51,11 @@ function BookingForm({ availableTimes, dispatchAvailableTimes, submitForm }) {
                     </section>
 
                     <section className="label-input-pair">
-                        <label htmlFor="res-time">Choose time*</label>
+                        <label className="markazi-text-medium" htmlFor="res-time">
+                            Choose time*
+                        </label>
                         <select
+                            className="karla-regular"
                             id="res-time"
                             name="time"
                             onChange={handleChange}
@@ -64,8 +70,11 @@ function BookingForm({ availableTimes, dispatchAvailableTimes, submitForm }) {
 
                 <section className="reservation-guests-occasion-form">
                     <section className="label-input-pair">
-                        <label htmlFor="guests">Number of guests*</label>
+                        <label className="markazi-text-medium" htmlFor="guests">
+                            Number of guests*
+                        </label>
                         <input
+                            className="karla-regular"
                             type="number"
                             name="guests"
                             placeholder="1"
@@ -79,8 +88,11 @@ function BookingForm({ availableTimes, dispatchAvailableTimes, submitForm }) {
                     </section>
 
                     <section className="label-input-pair">
-                        <label htmlFor="occasion">Occasion*</label>
+                        <label className="markazi-text-medium" htmlFor="occasion">
+                            Occasion*
+                        </label>
                         <select
+                            className="karla-regular"
                             id="occasion"
                             name="occasion"
                             onChange={handleChange}
@@ -93,7 +105,7 @@ function BookingForm({ availableTimes, dispatchAvailableTimes, submitForm }) {
                 </section>
 
                 <input
-                    className="submit-form-button"
+                    className="submit-form-button markazi-text-medium"
                     type="submit"
                     value="Make Your Reservation"
                 ></input>
