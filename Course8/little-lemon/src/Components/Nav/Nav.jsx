@@ -9,21 +9,21 @@ function Nav() {
                     <Link to="/">Home</Link>
                 </li>
                 <li>
-                    <Link to="/about">About</Link>
+                    <Link to="/">About</Link>
                 </li>
                 <li>
-                    <Link to="/menu">Menu</Link>
+                    <Link to="/">Menu</Link>
                 </li>
                 <li>
                     <Link to="/booking">Reservations</Link>
                 </li>
                 <li>
-                    <Link to="/order-online">
+                    <Link to="/">
                         <span className="no-wrap">Order Online</span>
                     </Link>
                 </li>
                 <li>
-                    <Link to="/login">Login</Link>
+                    <Link to="/">Login</Link>
                 </li>
             </ul>
         </nav>
