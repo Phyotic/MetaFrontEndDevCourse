@@ -2,7 +2,21 @@
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
-    --mobile-bp1: 500px;
+}
+
+:root {
+    display: flex;
+    flex-direction: column;
+    --primary-green: #495e57;
+    --primary-yellow: #f4ce14;
+    --secondary-orange: #ee9972;
+    --secondary-peach: #fbdabb;
+    --secondary-white: #edefee;
+    --secondary-black: #333333;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
 body {
@@ -12,20 +26,40 @@ body {
         "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
-}
-
-#root {
-    display: flex;
-    flex-direction: column;
+    background-color: var(--secondary-white);
 }
 
 /* Utility classes */
 .no-wrap {
     white-space: nowrap;
+}
+
+.markazi-text-medium {
+    font-family: "Markazi Text", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.karla-regular {
+    font-family: "Karla", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.standard-button {
+    font-family: "Markazi Text", serif;
+    font-weight: 700;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    letter-spacing: 0.07rem;
+    background-color: var(--secondary-peach);
+}
+
+.standard-button:hover {
+    background-color: var(--secondary-orange);
 }
 
 @media screen and (width >= 700px) {
