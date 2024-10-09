@@ -3,15 +3,16 @@ import section1Image from "../../images/Mario and Adrian A.jpg";
 import greekSalad from "../../images/greek salad.jpg";
 import bruchetta from "../../images/bruchetta.svg";
 import lemonDessert from "../../images/lemon dessert.jpg";
-import deliveryBike from "../../images/motorbike-delivery-icon.svg";
-import userPortrait from "../../images/restaurant chef B.jpg";
 import restaurantFood from "../../images/restauranfood.jpg";
-import chefs from "../../images/Mario and Adrian b.jpg";
 import DishCard from "../DishCard/DishCard";
 import Rating from "../Rating/Rating";
+import manOne from "../../images/man-1.jpg";
+import manTwo from "../../images/man-2.jpg";
+import womanOne from "../../images/woman-1.jpg";
+import womanTwo from "../../images/woman-2.jpg";
 
 function HomePage() {
-    let specialsInfo = [
+    const specialsInfo = [
         {
             name: "Greek Salad",
             price: "12.99",
@@ -32,36 +33,36 @@ function HomePage() {
         },
     ];
 
-    let ratingsInfo = [
+    const ratingsInfo = [
         {
             rating: 5,
-            userPortrait: userPortrait,
-            altText: "Anakin Skywalker",
-            name: "Anakin Skywalker",
+            userPortrait: manOne,
+            altText: "Alex Amon",
+            name: "Alex",
             reviewText:
                 "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste voluptas cupiditate eaque minus laboriosam perferendis nulla odit accusamus vel officia accusantium, enim adipisci, voluptatibus itaque repudiandae quos amet commodi animi?",
         },
         {
             rating: 4,
-            userPortrait: userPortrait,
-            altText: "Obi-Wan Kenobi",
-            name: "Obi-Wan Kenobi",
+            userPortrait: manTwo,
+            altText: "Bruce Barl",
+            name: "Bruce",
             reviewText:
                 "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste voluptas cupiditate eaque minus laboriosam perferendis nulla odit accusamus vel officia accusantium, enim adipisci, voluptatibus itaque repudiandae quos amet commodi animi?",
         },
         {
             rating: 3,
-            userPortrait: userPortrait,
-            altText: "Luke Skywalker",
-            name: "Luke Skywalker",
+            userPortrait: womanOne,
+            altText: "Candice Cline",
+            name: "Candice",
             reviewText:
                 "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste voluptas cupiditate eaque minus laboriosam perferendis nulla odit accusamus vel officia accusantium, enim adipisci, voluptatibus itaque repudiandae quos amet commodi animi?",
         },
         {
             rating: 5,
-            userPortrait: userPortrait,
-            altText: "Han Solo",
-            name: "Han Solo",
+            userPortrait: womanTwo,
+            altText: "Diana Delume",
+            name: "Diana Delume",
             reviewText:
                 "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste voluptas cupiditate eaque minus laboriosam perferendis nulla odit accusamus vel officia accusantium, enim adipisci, voluptatibus itaque repudiandae quos amet commodi animi?",
         },
@@ -72,18 +73,20 @@ function HomePage() {
             <section id="reserve-section">
                 <section id="reserve-image-background">
                     <section className="top-half">
-                        <h1>Little Lemon</h1>
-                        <h2>Chicago</h2>
+                        <h1 className="markazi-text-medium">Little Lemon</h1>
+                        <h2 className="markazi-text-medium">Chicago</h2>
                     </section>
 
                     <section className="bottom-half">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Adipisci veniam atque facilis ducimus asperiores sed dolorum,
-                            deleniti iure, nulla quo, consectetur illo ullam aliquid
-                            perferendis totam quaerat alias eum libero!
+                        <p className="karla-regular">
+                            Little Lemon is a charming neighborhood bistro that serves
+                            simple, good, and classic cocktails in a lively but casual
+                            environment. The restaurant features a locally-sourced menu
+                            with daily specials.
                         </p>
-                        <button aria-label="On Click">Reserve a Table</button>
+                        <button className="standard-button" aria-label="On Click">
+                            Reserve a Table
+                        </button>
                     </section>
                 </section>
 
@@ -94,8 +97,10 @@ function HomePage() {
 
             <section id="specials-section">
                 <section id="specials-header">
-                    <h1>Specials</h1>
-                    <button aria-label="On Click">Online Menu</button>
+                    <h1 className="markazi-text-medium">Specials</h1>
+                    <button className="standard-button" aria-label="On Click">
+                        Online Menu
+                    </button>
                 </section>
 
                 <section className="dish-cards-container">
@@ -114,7 +119,7 @@ function HomePage() {
             </section>
 
             <section id="testimonials-section">
-                <h1>Testimonials</h1>
+                <h1 className="markazi-text-medium">Testimonials</h1>
 
                 <section className="ratings-container">
                     {ratingsInfo.map((review) => {
@@ -134,9 +139,9 @@ function HomePage() {
 
             <section id="about-us-section">
                 <section id="restaurant-info">
-                    <h1>Little Lemon</h1>
-                    <h2>Chicago</h2>
-                    <p>
+                    <h1 className="markazi-text-medium">Little Lemon</h1>
+                    <h2 className="markazi-text-medium">Chicago</h2>
+                    <p className="karla-regular">
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus
                         at reprehenderit optio maxime? Qui veritatis labore voluptate eum
                         maxime fuga corrupti, nesciunt animi unde ipsam sequi delectus

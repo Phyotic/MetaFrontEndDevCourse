@@ -14,12 +14,9 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
-
-    color: white;
+    color: var(--secondary-white);
     text-align: center;
-
     min-height: 50vh;
-
     display: flex;
     flex-direction: column;
 }
@@ -30,8 +27,13 @@
 }
 
 #reserve-section .top-half h1 {
-    font-size: 2rem;
+    font-size: 3rem;
     padding: 3vh 0 0;
+    color: var(--secondary-white);
+}
+
+#reserve-section .top-half h2 {
+    color: var(--secondary-white);
 }
 
 #reserve-section .bottom-half p {
@@ -51,10 +53,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: var(--secondary-black);
 }
 
 #specials-header h1 {
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 #specials-header button {
@@ -70,7 +73,8 @@
 
 #testimonials-section > h1 {
     text-align: center;
-    font-size: 2rem;
+    font-size: 3rem;
+    color: var(--secondary-black);
 }
 
 .ratings-container {
@@ -80,16 +84,22 @@
 
 /* About Us Section */
 #restaurant-info > h1 {
-    font-size: 2rem;
+    font-size: 3rem;
     text-align: center;
+    color: var(--secondary-black);
 }
 
 #restaurant-info > h2 {
     text-align: center;
+    color: var(--secondary-black);
 }
 
 #about-us-images-container {
     padding: 2vh 0;
+}
+
+#about-us-images-container .about-us-image-containers:last-child {
+    display: none;
 }
 
 .about-us-image {
@@ -118,9 +128,14 @@
         padding: 0;
     }
 
+    #reserve-section .top-half h2 {
+        color: var(--secondary-black);
+    }
+
     #reserve-section .top-half h1 {
         font-size: 2rem;
         padding: 0;
+        color: var(--secondary-black);
     }
 
     #reserve-image-background .bottom-half {
@@ -132,7 +147,7 @@
     }
 
     #reserve-image-background .bottom-half p {
-        padding: 3vh 0 5vh;
+        padding: 3vh 1vw 5vh;
     }
 
     #reserve-section section button {
@@ -159,7 +174,7 @@
     }
 
     #specials-header h1 {
-        font-size: 2rem;
+        font-size: calc(1rem + 2vw);
     }
 
     #specials-header button {
@@ -251,6 +266,10 @@
         flex-direction: column;
         flex: 1 1 50%;
         padding: 0;
+    }
+
+    #about-us-images-container .about-us-image-containers:last-child {
+        display: block;
     }
 
     .about-us-image-containers {
