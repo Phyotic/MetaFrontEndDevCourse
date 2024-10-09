@@ -5,6 +5,8 @@
 
 .rating-profile-image {
     width: 100%;
+    height: 50vh;
+    object-fit: cover;
 }
 
 .rating-profile-and-name > p {
@@ -13,4 +15,16 @@
 
 .rating-card p {
     font-size: 1rem;
+    color: var(--secondary-black);
+}
+
+.rating-card .review-name {
+    font-size: 2rem;
+    color: var(--secondary-black);
+}
+
+@media screen and (width >= 700px) {
+    .rating-profile-image {
+        height: 30vh;
+    }
 }

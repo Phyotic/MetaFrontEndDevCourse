@@ -12,9 +12,9 @@ function Ratings({ rating, userPortrait, altText, name, reviewText }) {
                         alt={altText}
                     ></img>
                 </div>
-                <p>{name}</p>
+                <p className="review-name markazi-text-medium">{name}</p>
             </section>
-            <p>{reviewText}</p>
+            <p className="karla-regular">{reviewText}</p>
         </section>
     );
 }
