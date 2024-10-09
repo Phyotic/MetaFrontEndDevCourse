@@ -5,17 +5,17 @@ import { Link } from "react-router-dom";
 function Footer() {
     let headerLinks = [
         ["/", "Home"],
-        ["/about", "About"],
-        ["/menu", "Menu"],
+        ["/", "About"],
+        ["/", "Menu"],
         ["/booking", "Reservations"],
-        ["/order-online", "Order Online"],
-        ["/login", "Login"],
+        ["/", "Order Online"],
+        ["/", "Login"],
     ];
 
     let socialMediaLinks = [
-        ["/", "link 1"],
-        ["/", "link 2"],
-        ["/", "link 3"],
+        ["/", "Facebook"],
+        ["/", "Instagram"],
+        ["/", "Tik Tok"],
     ];
 
     return (
@@ -40,9 +40,9 @@ function Footer() {
             <section className="header-and-list">
                 <h2>Contact</h2>
                 <ul>
-                    <li>Address</li>
-                    <li>phone number</li>
-                    <li>email</li>
+                    <li>1234 W Lemon St.</li>
+                    <li>312-555-1234</li>
+                    <li>little-lemon@email.com</li>
                 </ul>
             </section>
 
