@@ -1,0 +1,61 @@
+footer {
+    padding: 5vh 0;
+}
+
+#footer-logo img {
+    width: 100%;
+}
+
+footer h2 {
+    text-align: center;
+    padding-top: 2vh;
+    font-family: "Markazi Text", serif;
+    font-size: 2rem;
+    color: var(--primary-green);
+}
+
+footer ul li {
+    padding: 1vh;
+    text-align: center;
+    list-style-type: none;
+    color: var(--secondary-black);
+}
+
+footer a:link {
+    color: var(--primary-green);
+    font-family: "karla-regular", sans-serif;
+    letter-spacing: 0.1rem;
+}
+
+footer a:visited {
+    color: var(--secondary-orange);
+}
+
+footer a:hover {
+    color: var(--secondary-peach);
+}
+
+footer a:active {
+    color: var(--primary-yellow);
+}
+
+@media screen and (width >= 700px) {
+    footer {
+        display: flex;
+    }
+
+    #footer-logo {
+        display: flex;
+        flex: 1 1 20%;
+    }
+
+    .header-and-list {
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 25%;
+    }
+
+    footer h2 {
+        min-height: 11vh;
+    }
+}

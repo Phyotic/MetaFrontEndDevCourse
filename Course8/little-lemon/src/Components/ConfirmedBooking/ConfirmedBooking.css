@@ -1,0 +1,9 @@
+#confirm-text {
+    font-size: calc(1rem + 2vw);
+    text-align: center;
+    padding: 3vh 0;
+    color: var(--primary-green);
+    margin: 1vh 0;
+    border-top: 3px solid var(--primary-yellow);
+    border-bottom: 3px solid var(--primary-yellow);
+}

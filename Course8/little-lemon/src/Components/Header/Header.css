@@ -1,0 +1,22 @@
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+header img {
+    flex: 1 1 30%;
+}
+
+Nav {
+    flex: 2 1 70%;
+}
+
+@media screen and (width >= 700px) {
+    header {
+        flex-direction: row;
+    }
+
+    header img {
+        padding-right: 1vw;
+    }
+}
